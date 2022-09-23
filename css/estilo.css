@@ -1,0 +1,140 @@
+*{
+    margin: 3;
+    padding: 3;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#f05053, #e1eec3);
+}
+.contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+     "header header"
+     "main main"
+     "footer footer";
+}
+
+.header{
+    padding: 1.2rem;
+    display: flex;
+    grid-area: header;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 900px;
+    height: 80px;
+    margin: 20px;
+    background-color: hotpink;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 90px;
+    padding: 5px;
+    border-radius: 80px;
+    
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(245, 168, 206);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.menu a{
+    color:lightgoldenrodyellow;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.menu a:hover{
+    background-color: darksalmon;
+    color: black;
+    border-radius: 20px;
+}
+.menu li a:hover{
+    color: black;
+}
+
+h1,h2,h5{
+    font-family: 'EB Garamond', cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+h3,h4{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+.main{
+    grid-area: main;
+}
+.main p{
+    padding: 20px;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main img{
+    width: 90px;
+    border-radius: 15px;
+}
+
+.video{
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    text-align: center;
+}
+
+.redes img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 45px;
+    justify-content:center;
+}
+
+@media (max-width: 768px){
+    .contenedor{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+
+    }
+}
+@media (max-width: 420px){
+
+    .footer{
+        flex-direction: column;
+    }
+}
