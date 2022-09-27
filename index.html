@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/f491513d94.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./imagenes/favicon.png"/>
     <title>Kitty Store</title>
 </head>
 <body>
+
     <div class="contenedor">
         <header>
-                <nav>
+                <nav class="nav1">
                     <div id="top">
-                        <img class="logo" src="./imagenes/k1.jpg" alt="Logo" >
+                        <div class="logconten">
+                            <img class="logo" src="./imagenes/k1.jpg" alt="Logo" >
+                        </div>
                     </div>
                     <ul class="menu">
+                        <li>
+                            <a href="/index.html">Inicio</a>
+                        </li>
                         <li>
                             <a href="./paginas/Productos.html">Productos</a>
                         </li>
@@ -28,10 +35,10 @@
                             <a href="./paginas/Juguetes.html">Juguetes</a>
                         </li>
                         <li>
-                            <a href="./paginas/Acerca.html" target="_blank">Acerca de</a>
+                            <a href="./paginas/Acerca.html">Acerca de</a>
                         </li>
                         <li>
-                            <a href="./paginas/Contacto.html" target="_blank">Contacto</a>
+                            <a href="./paginas/Contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,6 +46,7 @@
 
         <br>
         <main class="main">
+            <!---seccion1--->
             <section class="section1">
 
                 <h2 class="animate__animated animate__swing"> 
@@ -54,16 +62,16 @@
                     </ul>
                 </h3>
 
-
+        <!---seccion2--->
             <section class="section2">
                 <p>
                     Hello Kitty es una gatita feliz y divertida, le encanta llevar la ternura por donde va. Ella vive con sus papás y su gemela Mimmy, en Londres. Para ella nunca está de más tener muchos amigos.
                 </p>
             </section>
-            
+        <!---seccion3--->
             <section class="section3">
                 <h4>¿Quienes son los amigos de Kitty?</h4>
-                <table border="1" cellpadding="10px">
+                <table class="table table-bordered">
                     <tr>
                         <th>Nombre</th>
                         <th>Descripción</th>
@@ -96,6 +104,8 @@
                     </tr>
                 </table>
             </section>
+
+        <!---section4--->
             <section class="section4">
                 <p>
                     Aqui podras encontrar todos los capitulos que desees. 
@@ -110,6 +120,7 @@
                 </p>
             </section>
         </main>
+    <!---footer--->    
         <footer>
             <br>
                 <h5>      
